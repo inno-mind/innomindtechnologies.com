@@ -4,82 +4,301 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Innomind Technologies | Software Consulting & Innovation</title>
+<meta name="description" content="Innomind Technologies helps businesses accelerate innovation through software engineering, cloud-native architectures, AI-powered solutions, and technology consulting.">
+<link rel="icon" type="image/png" href="logo.png">
 <link rel="stylesheet" href="styles.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
-<header>
-<nav class="container nav">
-<div class="brand">
-<img src="logo.png" alt="Innomind Technologies">
-</div>
-<div class="menu">
-<a href="#services">Services</a>
-<a href="#about">About</a>
-<a href="#why">Why Us</a>
-<a href="#contact">Contact</a>
-</div>
-</nav>
+
+<header id="header">
+  <nav class="container nav">
+    <a href="#" class="brand">
+      <img src="logo.png" alt="Innomind Technologies">
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="#services">Services</a>
+      <a href="#tech">Tech Stack</a>
+      <a href="#about">About</a>
+      <a href="#why">Why Us</a>
+      <a href="#contact" class="nav-cta">Get in Touch</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
 </header>
 
 <section class="hero">
-<div class="container hero-grid">
-<div>
-<span class="badge">Software Consulting • Cloud • AI • Modernization</span>
-<h1>Transforming Ideas Into Scalable Digital Solutions</h1>
-<p>Innomind Technologies helps businesses accelerate innovation through software engineering, cloud-native architectures, AI-powered solutions, and technology consulting.</p>
-<a class="btn" href="#contact">Contact Us</a>
-</div>
-<div class="hero-card">
-<img src="logo.png" alt="Innomind">
-</div>
-</div>
+  <canvas id="particleCanvas"></canvas>
+  <div class="hero-glow"></div>
+  <div class="hero-content container">
+    <div class="hero-badge reveal">
+      <span class="pulse-dot"></span>
+      Software Consulting &bull; Cloud &bull; AI &bull; Modernization
+    </div>
+    <h1 class="reveal delay-1">
+      Transforming Ideas Into<br>
+      <span class="gradient-text">Scalable Digital Solutions</span>
+    </h1>
+    <p class="hero-sub reveal delay-2">
+      We help businesses accelerate innovation through software engineering,
+      cloud-native architectures, AI-powered solutions, and technology consulting.
+    </p>
+    <div class="hero-actions reveal delay-3">
+      <a href="#contact" class="btn-primary">
+        <span>Book a Consultation</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="#services" class="btn-ghost">Explore Services</a>
+    </div>
+  </div>
+  <div class="scroll-indicator">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
 </section>
 
 <section id="services" class="section">
-<div class="container">
-<h2>Our Services</h2>
-<div class="cards">
-<div class="card"><h3>Software Consulting</h3><p>Architecture reviews, modernization strategies, and technology roadmaps.</p></div>
-<div class="card"><h3>Custom Development</h3><p>Web, backend, APIs, distributed systems, and enterprise-grade applications.</p></div>
-<div class="card"><h3>Cloud Engineering</h3><p>AWS, Azure, Kubernetes, DevOps automation, and cloud migration.</p></div>
-<div class="card"><h3>AI & Automation</h3><p>AI integrations, workflow automation, and intelligent business solutions.</p></div>
-</div>
-</div>
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag reveal">What We Do</span>
+      <h2 class="reveal">Our Services</h2>
+      <p class="section-desc reveal">End-to-end technology solutions that drive business growth</p>
+    </div>
+    <div class="services-grid">
+      <div class="glass-card reveal">
+        <div class="card-glow"></div>
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/>
+          </svg>
+        </div>
+        <h3>Software Consulting</h3>
+        <p>Architecture reviews, modernization strategies, and technology roadmaps tailored for your business.</p>
+        <div class="card-line"></div>
+      </div>
+      <div class="glass-card reveal">
+        <div class="card-glow"></div>
+        <div class="card-icon icon-teal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
+          </svg>
+        </div>
+        <h3>Custom Development</h3>
+        <p>Web, backend, APIs, distributed systems, and enterprise-grade applications built to scale.</p>
+        <div class="card-line"></div>
+      </div>
+      <div class="glass-card reveal">
+        <div class="card-glow"></div>
+        <div class="card-icon icon-purple">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/>
+          </svg>
+        </div>
+        <h3>Cloud Engineering</h3>
+        <p>AWS, Azure, Kubernetes, DevOps automation, and seamless cloud migration strategies.</p>
+        <div class="card-line"></div>
+      </div>
+      <div class="glass-card reveal">
+        <div class="card-glow"></div>
+        <div class="card-icon icon-orange">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2a4 4 0 0 1 4 4c0 1.95-2 3-2 8h-4c0-5-2-6.05-2-8a4 4 0 0 1 4-4z"/><path d="M10 18h4"/><path d="M10 22h4"/>
+          </svg>
+        </div>
+        <h3>AI & Automation</h3>
+        <p>AI integrations, workflow automation, and intelligent solutions that transform operations.</p>
+        <div class="card-line"></div>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section id="about" class="section dark">
-<div class="container">
-<h2>About Innomind Technologies</h2>
-<p>We partner with startups, SMEs, and enterprises to solve complex technology challenges. Our mission is to combine deep engineering expertise with innovation-driven thinking to deliver measurable business outcomes.</p>
-</div>
+<section id="tech" class="section section-dark">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag reveal">Technologies</span>
+      <h2 class="reveal">Our Tech Stack</h2>
+      <p class="section-desc reveal">Battle-tested technologies powering enterprise solutions</p>
+    </div>
+  </div>
+  <div class="marquee-wrapper">
+    <div class="marquee-fade-left"></div>
+    <div class="marquee-fade-right"></div>
+    <div class="marquee-track">
+      <div class="tech-badge">AWS</div>
+      <div class="tech-badge">Azure</div>
+      <div class="tech-badge">GCP</div>
+      <div class="tech-badge">Kubernetes</div>
+      <div class="tech-badge">Docker</div>
+      <div class="tech-badge">Terraform</div>
+      <div class="tech-badge">Python</div>
+      <div class="tech-badge">Java</div>
+      <div class="tech-badge">Go</div>
+      <div class="tech-badge">React</div>
+      <div class="tech-badge">Node.js</div>
+      <div class="tech-badge">TypeScript</div>
+      <div class="tech-badge">PostgreSQL</div>
+      <div class="tech-badge">MongoDB</div>
+      <div class="tech-badge">Redis</div>
+      <div class="tech-badge">Kafka</div>
+      <div class="tech-badge">GraphQL</div>
+      <div class="tech-badge">Jenkins</div>
+      <div class="tech-badge">AWS</div>
+      <div class="tech-badge">Azure</div>
+      <div class="tech-badge">GCP</div>
+      <div class="tech-badge">Kubernetes</div>
+      <div class="tech-badge">Docker</div>
+      <div class="tech-badge">Terraform</div>
+      <div class="tech-badge">Python</div>
+      <div class="tech-badge">Java</div>
+      <div class="tech-badge">Go</div>
+      <div class="tech-badge">React</div>
+      <div class="tech-badge">Node.js</div>
+      <div class="tech-badge">TypeScript</div>
+      <div class="tech-badge">PostgreSQL</div>
+      <div class="tech-badge">MongoDB</div>
+      <div class="tech-badge">Redis</div>
+      <div class="tech-badge">Kafka</div>
+      <div class="tech-badge">GraphQL</div>
+      <div class="tech-badge">Jenkins</div>
+    </div>
+  </div>
+  <div class="marquee-wrapper" style="margin-top:20px">
+    <div class="marquee-fade-left"></div>
+    <div class="marquee-fade-right"></div>
+    <div class="marquee-track marquee-reverse">
+      <div class="tech-badge">Linux</div>
+      <div class="tech-badge">Nginx</div>
+      <div class="tech-badge">ElasticSearch</div>
+      <div class="tech-badge">RabbitMQ</div>
+      <div class="tech-badge">Prometheus</div>
+      <div class="tech-badge">Grafana</div>
+      <div class="tech-badge">CI/CD</div>
+      <div class="tech-badge">Microservices</div>
+      <div class="tech-badge">REST APIs</div>
+      <div class="tech-badge">gRPC</div>
+      <div class="tech-badge">Serverless</div>
+      <div class="tech-badge">OAuth</div>
+      <div class="tech-badge">Linux</div>
+      <div class="tech-badge">Nginx</div>
+      <div class="tech-badge">ElasticSearch</div>
+      <div class="tech-badge">RabbitMQ</div>
+      <div class="tech-badge">Prometheus</div>
+      <div class="tech-badge">Grafana</div>
+      <div class="tech-badge">CI/CD</div>
+      <div class="tech-badge">Microservices</div>
+      <div class="tech-badge">REST APIs</div>
+      <div class="tech-badge">gRPC</div>
+      <div class="tech-badge">Serverless</div>
+      <div class="tech-badge">OAuth</div>
+    </div>
+  </div>
 </section>
 
-<section id="why" class="section">
-<div class="container">
-<h2>Why Choose Us</h2>
-<div class="cards">
-<div class="card"><h3>Engineering Excellence</h3><p>Focus on quality, scalability, reliability, and maintainability.</p></div>
-<div class="card"><h3>Business First</h3><p>Technology decisions aligned with business objectives.</p></div>
-<div class="card"><h3>Agile Delivery</h3><p>Fast iterations, transparent communication, and predictable outcomes.</p></div>
-</div>
-</div>
+<section id="about" class="section">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-text">
+        <span class="section-tag reveal">Who We Are</span>
+        <h2 class="reveal">About Innomind Technologies</h2>
+        <p class="reveal">We partner with startups, SMEs, and enterprises to solve complex technology challenges. Our mission is to combine deep engineering expertise with innovation-driven thinking to deliver measurable business outcomes.</p>
+        <p class="reveal">From concept to deployment, we build solutions that scale, perform, and endure.</p>
+      </div>
+      <div class="stats-grid">
+        <div class="stat-card reveal">
+          <div class="stat-value">
+            <span class="stat-number" data-target="50">0</span><span class="stat-suffix">+</span>
+          </div>
+          <span class="stat-label">Projects Delivered</span>
+        </div>
+        <div class="stat-card reveal">
+          <div class="stat-value">
+            <span class="stat-number" data-target="30">0</span><span class="stat-suffix">+</span>
+          </div>
+          <span class="stat-label">Happy Clients</span>
+        </div>
+        <div class="stat-card reveal">
+          <div class="stat-value">
+            <span class="stat-number" data-target="10">0</span><span class="stat-suffix">+</span>
+          </div>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="stat-card reveal">
+          <div class="stat-value">
+            <span class="stat-number" data-target="99">0</span><span class="stat-suffix">%</span>
+          </div>
+          <span class="stat-label">Client Retention</span>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section id="contact" class="section contact">
-<div class="container">
-<h2>Let's Build Something Great</h2>
-<p>Email: innomindtechno@gmail.com</p>
-<p>Technology Consulting • Product Engineering • Innovation</p>
-</div>
+<section id="why" class="section section-dark">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag reveal">Our Edge</span>
+      <h2 class="reveal">Why Choose Us</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-card reveal">
+        <div class="why-number">01</div>
+        <h3>Engineering Excellence</h3>
+        <p>Uncompromising focus on quality, scalability, reliability, and maintainability in every line of code we write.</p>
+        <div class="why-line"></div>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-number">02</div>
+        <h3>Business First</h3>
+        <p>Technology decisions driven by business objectives and ROI — not trends or hype.</p>
+        <div class="why-line"></div>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-number">03</div>
+        <h3>Agile Delivery</h3>
+        <p>Fast iterations, transparent communication, and predictable outcomes every sprint.</p>
+        <div class="why-line"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <div class="container">
+    <div class="contact-wrapper reveal">
+      <div class="contact-glow"></div>
+      <div class="contact-content">
+        <h2>Let's Build Something<br><span class="gradient-text">Great Together</span></h2>
+        <p>Ready to transform your business with technology? Let's talk.</p>
+        <a href="mailto:innomindtechno@gmail.com" class="btn-primary btn-lg">
+          <span>innomindtechno@gmail.com</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <div class="contact-tags">
+          <span>Technology Consulting</span>
+          <span>Product Engineering</span>
+          <span>Innovation</span>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <footer>
-<div class="container">
-© 2026 Innomind Technologies. All Rights Reserved.
-</div>
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <img src="logo.png" alt="Innomind Technologies">
+    </div>
+    <p>&copy; 2026 Innomind Technologies. All Rights Reserved.</p>
+  </div>
 </footer>
+
+<script src="script.js"></script>
 </body>
 </html>
